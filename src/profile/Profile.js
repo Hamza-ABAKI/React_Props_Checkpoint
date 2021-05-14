@@ -27,7 +27,7 @@ const Profile = (props) => {
 
   return (
     <div className='Profile' style={style_profile}>
-      <img style={{ width: '250px', height: '320px' }} src={children} alt='' />
+      {children}
       <div className='txt' style={style_txt}>
         <h3>Name: {fullName}</h3>
         <h3>Profession: {profession}</h3>
@@ -50,7 +50,13 @@ Profile.defaultProps = {
   fullName: 'Default name',
   bio: 'A biography is the non-fiction, written history or account of a person’s life. Biographies are intended to give an objective portrayal of a person, written in the third person. ',
   profession: 'What do you do for living ?',
-  children: 'profilePic.png',
+  children: (
+    <img
+      style={{ width: '250px', height: '320px' }}
+      src='profilePic.png'
+      alt=''
+    />
+  ),
 }
 
 Profile.propTypes = {

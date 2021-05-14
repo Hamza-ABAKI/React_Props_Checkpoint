@@ -20,7 +20,11 @@ function App() {
         }
         func={handleName}
       >
-        sherlock.jpg
+        <img
+          style={{ width: '250px', height: '320px' }}
+          src='sherlock.jpg'
+          alt=''
+        />
       </Profile>
 
       <Profile
@@ -31,7 +35,11 @@ function App() {
         }
         func={handleName}
       >
-        drWatson.jpg
+        <img
+          style={{ width: '250px', height: '320px' }}
+          src='drWatson.jpg'
+          alt=''
+        />
       </Profile>
     </div>
   )
